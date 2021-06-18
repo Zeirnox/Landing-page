@@ -61,8 +61,45 @@
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
+.main-wrapper {
+    position: relative;
+}
 #monds {
-    display: block;
-    margin: auto;
+    min-height: 100vh;
     width: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+#mobile-monds {
+    display: none;
+}
+.text-box {
+    width: 70%;
+    left: 15%;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    background-color: rgba(255, 255, 255, 0.267);
+}
+#nation-name {
+    font-size: 64px;
+}
+#nation-desc {
+    margin: 20px 0 40px;
+    font-size: 22px;
+}
+
+@media (max-width: 800px) {
+    .text-box{
+        width: 100%;
+        left: 0;
+    }
+    #monds {
+        display: none;
+    }
+    #mobile-monds {
+        display: block;
+        width: 100%;
+        min-height: 100vh;
+    }
 }
