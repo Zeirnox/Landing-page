@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background-color: #b8dab3;
+}
 #header-img {
     float: left;
     max-width: 100%;
@@ -51,7 +54,7 @@
     padding: 7px 14px;
 }
 #nav-link li ul li a:hover {
-    background-color: blue;
+    background-color: #00fd9c;
 }
 .drop-arrow {
     border: solid black;
@@ -62,7 +65,8 @@
     -webkit-transform: rotate(45deg);
 }
 .main-wrapper {
-    position: relative;
+    width: 100%;
+    margin: 0 auto;
 }
 #monds {
     min-height: 100vh;
@@ -81,13 +85,6 @@
     top: 30%;
     background-color: rgba(255, 255, 255, 0.267);
 }
-#nation-name {
-    font-size: 64px;
-}
-#nation-desc {
-    margin: 20px 0 40px;
-    font-size: 22px;
-}
 
 @media (max-width: 800px) {
     .text-box{
@@ -101,5 +98,78 @@
         display: block;
         width: 100%;
         min-height: 100vh;
+    }
+}
+
+#nation-name {
+    font-size: 64px;
+}
+#nation-desc {
+    margin: 20px 0 40px;
+    font-size: 22px;
+}
+/*
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.citywrapper {
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+.city-img {
+    max-width: 450px;
+    height: 200px;
+}
+*/
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.description {
+    background-color: rgba(219, 219, 219, 0.787);
+    border: 2px solid;
+    width: 500px;
+    min-height: 316px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 100px;
+}
+.description h2 {
+    text-align: center;
+    font-size: 40px;
+}
+.description p {
+    font-size: 20px;
+}
+.city-img {
+    max-width: 50%;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0px;
+}
+#video {
+    position: absolute;
+    left: 25%;
+    top: 100px;
+    right: 0px;
+    bottom: 0px;
+    height: 50%;
+    width: 50%;
+}
+@media (max-width: 800px) {
+    #video {
+        left: 10%;
+        height: 80%;
+        width: 80%;
     }
 }
