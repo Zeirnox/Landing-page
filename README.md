@@ -1,2 +1,2 @@
-# Landing page
- a landing page project hosted on gitpages: https://zeirnox.github.io/Landing-page/
+# Mondstadt
+ Infographic website about a fictional nation hosted on gitpages: https://zeirnox.github.io/Landing-page/
