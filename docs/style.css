@@ -165,3 +165,54 @@ body {
         width: 80%;
     }
 }
+/*
+.contactUs {
+    background-color: coral;
+    width: 50%;
+    margin: auto;
+    height: 200px;
+}
+.emailwrap {
+    width: 100%;
+    margin: 0 auto;
+}
+*/
+.emailwrap {
+    position: relative;
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: coral;
+    padding: 20px 0 50px 0;
+    border-radius: 10px;
+    bottom: 300px;
+}
+.emailwrap h3{
+    font-size: 40px;
+}
+.inputbox {
+width: 400px;
+height: 20px;
+text-align: center;
+margin-top: 20px;
+}
+.submitBtn {
+    width: 150px;
+    height: 50px;
+}
+@media (max-width: 1400px) {
+    .emailwrap {
+        top: 0;
+    }
+}
+@media (max-width: 800px){
+    .emailwrap {
+        top: 50px;
+        width: 80%;
+    }
+    .inputbox {
+        width: 90%;
+    }
+}

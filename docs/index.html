@@ -16,9 +16,9 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Destinations <span class="drop-arrow"></span></a>
                 <ul>
-                    <li><a href="#">City of Mondstadt</a></li>
-                    <li><a href="#">Spring Vale</a></li>
-                    <li><a href="#">Dawn Winery</a></li>
+                    <li><a href="#mondstadtSec">City of Mondstadt</a></li>
+                    <li><a href="#springValeSec">Spring Vale</a></li>
+                    <li><a href="#dawnWinerySec">Dawn Winery</a></li>
                 </ul>
             </li>
             <li><a href="#">Sightseeing</a></li>
@@ -40,10 +40,9 @@
     </div>
 </header>
 
-
 <main class="main-content">
     <div class="main-container">
-        <section class="wrapper">
+        <section class="wrapper" id="mondstadtSec">
             <div class="description">
                 <h2>City of Mondstadt</h2><br>
                 <p>The namesake of the nation.<br>
@@ -56,7 +55,7 @@
             </div>
         </section>
         <div>
-            <section class="wrapper">
+            <section class="wrapper" id="springValeSec">
                 <div class="description">
                     <h2>Spring Vale</h2><br>
                     <p>A sleepy little village to the south of Mondstadt, that sits facing the lake that surrounds the city.<br>
@@ -70,9 +69,9 @@
             </section>
         </div>
         <div>
-            <section class="wrapper">
+            <section class="wrapper" id="dawnWinerySec">
                 <div class="description">
-                    <h2>Dawn Winery</h2><br>
+                    <h2 id="dawnWinerySec">Dawn Winery</h2><br>
                     <p>Nestled in the land southwest of Mondstadt sits the winery that has passed down the legacy of Mondstadt's traditional wines and ciders for generations.<br><br>
                         The grapes grown here are used to produce a range of wines that are popular right across Teyvat.
                         Every year's products are split, with a portion being sold locally within Mondstadt, the rest is sold off via the trade route that sits south of the city.</p>
@@ -90,15 +89,20 @@
     </div>
 </main>
 
-<footer>
+<section>
     <form id="form">
         <div class="contactUs">
-            <div class="namewrap">
-                <label>Name</label>
-                <input placeholder="Enter your name" type="text" class="inputbox" required></input>
+            <div class="emailwrap">
+                <h3>To Learn More</h3>
+                <input id="email" placeholder="Enter your email" type="email" class="inputbox" required></input> <br>
+                <button id="submit" class="submitBtn">Submit</button>
             </div>
         </div>
     </form>
+</section>
+
+<footer>
+    
 </footer>
 
 </html>
