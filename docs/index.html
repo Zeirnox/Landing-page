@@ -6,6 +6,7 @@
     <meta name="author" content="James Liu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
     <title>Mondstadt</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,25 +16,40 @@
 </head>
 
 <header id="header">
-    <nav id="nav-bar">
-        <a href="index.html"><img id="header-img" src="img/Emblem_Mondstadt.png"></a>
-        <ul id="nav-link">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Destinations <span class="drop-arrow"></span></a>
-                <ul>
-                    <li><a href="#mondstadtSec">City of Mondstadt</a></li>
-                    <li><a href="#springValeSec">Spring Vale</a></li>
-                    <li><a href="#dawnWinerySec">Dawn Winery</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Sightseeing</a></li>
-            <li><a href="#">Culture</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img id="header-img" src="img/Emblem_Mondstadt.png" width="100" height="100">
+            </a>
+        </div>
+        <a href="#" class="toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navlink">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="destinationMenu">Destinations <span class="drop-arrow"></span></a>
+                    <div class="subMenu">
+                    <ul>
+                        <li><a href="#mondstadtSec">City of Mondstadt</a></li>
+                        <li><a href="#springValeSec">Spring Vale</a></li>
+                        <li><a href="#dawnWinerySec">Dawn Winery</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li><a href="#">Sightseeing</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
     </nav>
+
     <div class="main-warpper">
+        <div class="background-img">
         <img id="monds" src="img/Genshin-Impact-Mondstadt-in-the-Distance.jpg">
-        <img id="mobile-monds" src="img/Mondstadt mobile.jpg">
+        </div>
+        <!--<img id="mobile-monds" src="img/Mondstadt mobile.jpg">-->
         <div class="text-box">
             <h1 id="nation-name">Mondstadt</h1>
             <p id="nation-desc">A city of freedom that lies in the northeast of Teyvat.<br>
@@ -55,8 +71,8 @@
                     and small dotting the city. The lower area houses the market district,
                     while the upper area is for the Cathedral and the Library.</p>
             </div>
-            <div class="city-img" data-aos="fade-left">
-                <img src="img/City of Mondstadt.jpg" width="600" height="320">
+            <div data-aos="fade-left">
+                <img src="img/City of Mondstadt.jpg" class="city-img">
             </div>
         </section>
         <div>
@@ -71,8 +87,8 @@
                         you may come across a restaurant that truly knows how to bring out the best qualities of
                         Springvale's meat.</p>
                 </div>
-                <div class="city-img" data-aos="fade-left">
-                    <img src="img/Spring Vale.png" width="600" height="320">
+                <div data-aos="fade-left">
+                    <img src="img/Spring Vale.png" class="city-img">
                 </div>
             </section>
         </div>
@@ -86,8 +102,8 @@
                         Every year's products are split, with a portion being sold locally within Mondstadt, the rest is
                         sold off via the trade route that sits south of the city.</p>
                 </div>
-                <div class="city-img" data-aos="fade-left">
-                    <img src="img/Dawn Winery.png" width="600" height="320">
+                <div data-aos="fade-left">
+                    <img src="img/Dawn Winery.png" class="city-img">
                 </div>
             </section>
         </div>
@@ -95,12 +111,12 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({
-          offset: 350,
-          duration: 1000
-      });
+        AOS.init({
+            offset: 400,
+            duration: 1500
+        });
     </script>
-  
+
     <div class="videoWrapper">
         <iframe id="video" src="https://www.youtube.com/embed/S_V0TX6MyGw" title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
